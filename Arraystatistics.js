@@ -5,7 +5,7 @@ function arrayStats(array){
     let max = Math.max(...array);
  return {
     sum : sum,
-    average: Number(average.toFixed(2)),
+    average: Number(average.toFixed(2)), // Calculate average and round to 2 decimal places
     min: min,
     max : max,
 
