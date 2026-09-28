@@ -1,9 +1,24 @@
-function myMap(originalArray, callbackFn){
+// map array method with out using map.
+// function myMap(originalArray, callbackFn){
+//     let result = [];
+//     for(let i=0; i < originalArray.length; i++){
+//         result.push(callbackFn(originalArray[i]));
+//     }
+//     return result;
+// }
+
+// console.log(myMap([22], x => x * 4));
+
+//filter array method with out using filter.
+function myFilter(originalArray, callbackFn){
     let result = [];
-    for(let i=0; i < originalArray.length; i++){
-        result.push(callbackFn(originalArray[i]));
+    for(let i=0; i< originalArray.length; i++){
+   if(callbackFn(originalArray[i])){
+    result.push(originalArray[i]);
+   }
     }
-    return result;
+return result;
 }
 
-console.log(myMap([22], x => x + 4))
+console.log(myFilter([1,2,3,4], x=> x > 3));
+
