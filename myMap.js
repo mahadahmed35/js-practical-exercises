@@ -22,13 +22,27 @@
 
 // console.log(myFilter([1,2,3,4], x=> x > 3));
 
-function myReduce(originalArray, callbackFn, initialValue){
-for(let i =0; i<originalArray.length; i++){
-    initialValue = callbackFn(initialValue, originalArray[i]);
+//reduce without using reduce array method.
+
+// function myReduce(originalArray, callbackFn, initialValue){
+// for(let i =0; i<originalArray.length; i++){
+//     initialValue = callbackFn(initialValue, originalArray[i]);
+    
+// }
+// return initialValue;
+// }
+// console.log(
+//     myReduce([1,2,3,44], (total, number)=> total + number, 0)
+// );
+
+// forEach without using forEach array method.
+function myForEach( originalArray, callbackFn){
+    for(let i=0; i<originalArray.length; i++){
+   callbackFn(originalArray[i])
+    }
     
 }
-return initialValue;
-}
-console.log(
-    myReduce([1,2,3,44], (total, number)=> total + number, 0)
-);
+
+myForEach([1,2,3,4,5,6,7], x =>{
+console.log(x)
+})
