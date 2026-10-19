@@ -17,7 +17,7 @@
 //  console.log(combineNames("David", "Abdi", "Omer"))
 //  console.log(combineNames("David", "Abdi", "Omer", "Kader"))
 
-// Output of switch complex written.
+// Output of switch different way written.
 // const name = 'John';
 
 // switch (name) {
